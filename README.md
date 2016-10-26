@@ -9,12 +9,12 @@ TIMELY module has not been merged into this yet. We are working on merging it.
 ## Quick Start
 
 ### Build
-To compile it out-of-the-box, you need Visual Studio. 
+To compile it out-of-the-box, you need Visual Studio *2015*. 
 People have successfully built it with *free* version, 
 which can be downloaded [here](https://www.microsoft.com/en-us/download/details.aspx?id=48146). 
 Open windows/ns-3-dev/ns-3-dev.sln, just build the whole solution.
 
-You may try building it with the original Makefile, etc. We have done it a while back, but now you probably need to edit a few things to make it work.
+If you cannot get a Windows machine or Visual Studio for any reason, you may try building it with the original Makefile. We have done it a while back, but now you probably need to edit a few things in waf to make it work.
 
 ### Run
 The binary will be generated at windows/ns-3-dev/x64/Release/main.exe.
