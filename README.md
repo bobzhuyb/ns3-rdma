@@ -11,7 +11,7 @@ TIMELY module has not been merged into this yet. We are working on merging it.
 ### Build
 To compile it out-of-the-box, you need Visual Studio *2015* (not 2013 or 2017). 
 People have successfully built it with *free* version, 
-which can be downloaded [here](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15). 
+which can be downloaded [here](https://imagine.microsoft.com/en-us/Catalog/Product/101). 
 Open windows/ns-3-dev/ns-3-dev.sln, just build the whole solution.
 
 If you cannot get a Windows machine or Visual Studio for any reason, you may try building it with the original Makefile. We have done it a while back, but now you probably need to edit a few things in waf to make it work.
