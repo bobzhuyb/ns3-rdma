@@ -4,7 +4,7 @@ This is an NS-3 simulator for RDMA over Converged Ethernet v2 (RoCEv2). It inclu
 It is based on NS-3 version 3.17, and ported to Visual Studio environment, as explained [here](https://www.nsnam.org/wiki/Ns-3_on_Visual_Studio_2012).  
 
 ## Note
-TIMELY module has not been merged into this yet. We are working on merging it.
+TIMELY implementation is in "timely" branch and hasn't been merged into the master branch. So, you may not be able to simulate DCQCN and TIMELY simultaneously at this moment.
 
 ## Quick Start
 
