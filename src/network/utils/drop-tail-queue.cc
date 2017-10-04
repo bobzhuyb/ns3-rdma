@@ -105,8 +105,6 @@ DropTailQueue::DoEnqueue (Ptr<Packet> p)
   NS_LOG_LOGIC ("Number packets " << m_packets.size ());
   NS_LOG_LOGIC ("Number bytes " << m_bytesInQueue);
 
-  //std::cout << "Buffer enqueue:" << p->GetSize() << "\n";
-
   return true;
 }
 
@@ -147,7 +145,6 @@ DropTailQueue::DoPeek (void) const
     }
 
   Ptr<Packet> p = m_packets.front ();
-  //std::cout << "Buffer peek:" << p->GetSize() << "\n";
 
   NS_LOG_LOGIC ("Number packets " << m_packets.size ());
   NS_LOG_LOGIC ("Number bytes " << m_bytesInQueue);

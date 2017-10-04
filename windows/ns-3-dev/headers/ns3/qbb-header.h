@@ -21,8 +21,7 @@ namespace ns3 {
 class qbbHeader : public Header
 {
 public:
- 
-  qbbHeader (uint16_t pg);
+  qbbHeader (uint32_t pg);
   qbbHeader ();
   virtual ~qbbHeader ();
 
@@ -30,17 +29,13 @@ public:
   /**
    * \param pg The PG
    */
-  void SetPG (uint16_t pg);
-  void SetSeq(uint32_t seq);
-  void SetPort(uint16_t port);
+  void SetPG (uint32_t pg);
 
 //Getters
   /**
    * \return The pg
    */
-  uint16_t GetPG () const;
-  uint32_t GetSeq() const;
-  uint16_t GetPort() const;
+  uint32_t GetPG () const;
 
   static TypeId GetTypeId (void);
   virtual TypeId GetInstanceTypeId (void) const;
@@ -50,10 +45,7 @@ public:
   virtual uint32_t Deserialize (Buffer::Iterator start);
 
 private:
-  uint16_t m_pg;
-  uint32_t m_seq; // the qbb sequence number.
-  uint16_t m_port; //udp port to identify flows...
-  
+  uint32_t m_pg;
 };
 
 }; // namespace ns3

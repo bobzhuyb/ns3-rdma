@@ -31,7 +31,6 @@
 #include "ns3/ipv4-address.h"
 
 #ifdef WIN32
-#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 #include <hash_map>
 #endif
 

@@ -1,0 +1,1 @@
+copy "D:\pub\NetRes\projects\lossless\rdma\ns-3-win2\windows\ns-3-dev\\..\..\src\core\model\*.h"  "D:\pub\NetRes\projects\lossless\rdma\ns-3-win2\windows\ns-3-dev\\headers\ns3"

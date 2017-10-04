@@ -39,7 +39,6 @@
 #include "ipv4-l3-protocol.h"
 #include "ipv6-l3-protocol.h"
 #include "udp-socket-impl.h"
-#include "ns3/seq-ts-header.h"
 
 NS_LOG_COMPONENT_DEFINE ("UdpL4Protocol");
 
@@ -437,10 +436,6 @@ UdpL4Protocol::Send (Ptr<Packet> packet,
 
   packet->AddHeader (udpHeader);
 
-  //SeqTsHeader sth;
-  //packet->PeekHeader(sth);
-  //std::cout << "in udp l4 protocol send with port " << sth.GetSeq() << "\n";
-
   m_downTarget (packet, saddr, daddr, 0 ,PROT_NUMBER, 0);
 }
 
@@ -462,10 +457,7 @@ UdpL4Protocol::Send (Ptr<Packet> packet,
   udpHeader.SetDestinationPort (dport);
   udpHeader.SetSourcePort (sport);
 
- 
   packet->AddHeader (udpHeader);
-
-  
 
   //let tos=0
   m_downTarget (packet, saddr, daddr, 0, PROT_NUMBER, route);

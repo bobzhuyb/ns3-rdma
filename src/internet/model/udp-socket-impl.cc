@@ -36,7 +36,6 @@
 #include "udp-l4-protocol.h"
 #include "ipv4-end-point.h"
 #include "ipv6-end-point.h"
-#include "ns3/seq-ts-header.h"
 #include <limits>
 
 NS_LOG_COMPONENT_DEFINE ("UdpSocketImpl");
@@ -383,6 +382,7 @@ UdpSocketImpl::DoSend (Ptr<Packet> p)
       m_errno = ERROR_SHUTDOWN;
       return -1;
     } 
+
   return DoSendTo (p, (const Address)m_defaultAddress);
 }
 

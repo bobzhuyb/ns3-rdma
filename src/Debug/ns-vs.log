@@ -1,0 +1,8 @@
+﻿Build started 11/12/2015 2:38:14 PM.
+     1>Project "D:\pub\NetRes\projects\lossless\rdma\ns-3-win2\src\ns-vs.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MakeFile.Targets(37,5): warning MSB8005: The property 'NMakeBuildCommandLine' doesn't exist.  Skipping...
+     1>Done Building Project "D:\pub\NetRes\projects\lossless\rdma\ns-3-win2\src\ns-vs.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.10

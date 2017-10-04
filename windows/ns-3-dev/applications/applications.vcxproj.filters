@@ -72,6 +72,18 @@
     <ClCompile Include="..\..\..\src\applications\helper\v4ping-helper.cc">
       <Filter>helper</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\applications\model\timely-sender.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\applications\helper\timely-sender-receiver-helper.cc">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\applications\model\timely-receiver.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\applications\model\timely-trace-client.cc">
+      <Filter>model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\applications\model\bulk-send-application.h">
@@ -136,6 +148,18 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\applications\helper\v4ping-helper.h">
       <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\applications\model\timely-sender.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\applications\helper\timely-sender-receiver-helper.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\applications\model\timely-receiver.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\applications\model\timely-trace-client.h">
+      <Filter>model</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

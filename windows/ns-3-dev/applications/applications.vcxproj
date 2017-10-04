@@ -149,6 +149,7 @@ copy "$(SolutionDir)\..\..\src\applications\helper\*.h"  "$(SolutionDir)\headers
     <ClCompile Include="..\..\..\src\applications\helper\on-off-helper.cc" />
     <ClCompile Include="..\..\..\src\applications\helper\packet-sink-helper.cc" />
     <ClCompile Include="..\..\..\src\applications\helper\ping6-helper.cc" />
+    <ClCompile Include="..\..\..\src\applications\helper\timely-sender-receiver-helper.cc" />
     <ClCompile Include="..\..\..\src\applications\helper\udp-client-server-helper.cc" />
     <ClCompile Include="..\..\..\src\applications\helper\udp-echo-helper.cc" />
     <ClCompile Include="..\..\..\src\applications\helper\v4ping-helper.cc" />
@@ -160,6 +161,9 @@ copy "$(SolutionDir)\..\..\src\applications\helper\*.h"  "$(SolutionDir)\headers
     <ClCompile Include="..\..\..\src\applications\model\radvd-interface.cc" />
     <ClCompile Include="..\..\..\src\applications\model\radvd-prefix.cc" />
     <ClCompile Include="..\..\..\src\applications\model\radvd.cc" />
+    <ClCompile Include="..\..\..\src\applications\model\timely-receiver.cc" />
+    <ClCompile Include="..\..\..\src\applications\model\timely-sender.cc" />
+    <ClCompile Include="..\..\..\src\applications\model\timely-trace-client.cc" />
     <ClCompile Include="..\..\..\src\applications\model\udp-client.cc" />
     <ClCompile Include="..\..\..\src\applications\model\udp-echo-client.cc" />
     <ClCompile Include="..\..\..\src\applications\model\udp-echo-server.cc" />
@@ -172,6 +176,7 @@ copy "$(SolutionDir)\..\..\src\applications\helper\*.h"  "$(SolutionDir)\headers
     <ClInclude Include="..\..\..\src\applications\helper\on-off-helper.h" />
     <ClInclude Include="..\..\..\src\applications\helper\packet-sink-helper.h" />
     <ClInclude Include="..\..\..\src\applications\helper\ping6-helper.h" />
+    <ClInclude Include="..\..\..\src\applications\helper\timely-sender-receiver-helper.h" />
     <ClInclude Include="..\..\..\src\applications\helper\udp-client-server-helper.h" />
     <ClInclude Include="..\..\..\src\applications\helper\udp-echo-helper.h" />
     <ClInclude Include="..\..\..\src\applications\helper\v4ping-helper.h" />
@@ -183,6 +188,9 @@ copy "$(SolutionDir)\..\..\src\applications\helper\*.h"  "$(SolutionDir)\headers
     <ClInclude Include="..\..\..\src\applications\model\radvd-interface.h" />
     <ClInclude Include="..\..\..\src\applications\model\radvd-prefix.h" />
     <ClInclude Include="..\..\..\src\applications\model\radvd.h" />
+    <ClInclude Include="..\..\..\src\applications\model\timely-receiver.h" />
+    <ClInclude Include="..\..\..\src\applications\model\timely-sender.h" />
+    <ClInclude Include="..\..\..\src\applications\model\timely-trace-client.h" />
     <ClInclude Include="..\..\..\src\applications\model\udp-client.h" />
     <ClInclude Include="..\..\..\src\applications\model\udp-echo-client.h" />
     <ClInclude Include="..\..\..\src\applications\model\udp-echo-server.h" />

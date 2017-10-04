@@ -34,7 +34,6 @@ namespace sgi = ::__gnu_cxx;
 #ifndef WIN32
 namespace sgi = std;
 #else
-#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 #include <hash_map>
 namespace sgi = stdext;
 

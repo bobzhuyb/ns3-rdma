@@ -94,7 +94,8 @@ copy "$(SolutionDir)\..\..\src\core\helper\*.h"  "$(SolutionDir)\headers\ns3"</C
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y "$(SolutionDir)\..\..\src\core\model\*.h"  "$(SolutionDir)\headers\ns3"</Command>
+      <Command>copy "$(SolutionDir)\..\..\src\core\model\*.h"  "$(SolutionDir)\headers\ns3"
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

@@ -1,0 +1,5028 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="antenna\model\angles.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="antenna\model\antenna-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="antenna\model\cosine-antenna-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="antenna\model\isotropic-antenna-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="antenna\model\parabolic-antenna-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="antenna\test\test-angles.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="antenna\test\test-cosine-antenna.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="antenna\test\test-degrees-radians.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="antenna\test\test-isotropic-antenna.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="antenna\test\test-parabolic-antenna.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\examples\aodv.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\helper\aodv-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\model\aodv-dpd.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\model\aodv-id-cache.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\model\aodv-neighbor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\model\aodv-packet.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\model\aodv-routing-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\model\aodv-rqueue.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\model\aodv-rtable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\test\aodv-id-cache-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\test\aodv-regression.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\test\aodv-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\test\bug-772.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aodv\test\loopback.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\helper\bulk-send-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\helper\on-off-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\helper\packet-sink-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\helper\ping6-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\helper\udp-client-server-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\helper\udp-echo-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\helper\v4ping-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\bulk-send-application.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\onoff-application.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\packet-loss-counter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\packet-sink.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\ping6.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\radvd-interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\radvd-prefix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\radvd.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\seq-ts-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\udp-client.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\udp-echo-client.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\udp-echo-server.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\udp-server.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\udp-trace-client.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\model\v4ping.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\test\udp-client-server-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bridge\examples\csma-bridge-one-hop.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bridge\examples\csma-bridge.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bridge\helper\bridge-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bridge\model\bridge-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bridge\model\bridge-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\examples\buildings-pathloss-profiler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\helper\building-allocator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\helper\building-container.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\helper\building-position-allocator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\helper\buildings-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\model\building-list.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\model\building.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\model\buildings-mobility-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\model\buildings-propagation-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\model\hybrid-buildings-propagation-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\model\itu-r-1238-propagation-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\model\oh-buildings-propagation-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\test\building-position-allocator-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\test\buildings-helper-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\test\buildings-pathloss-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildings\test\buildings-shadowing-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="click\examples\nsclick-raw-wlan.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="click\examples\nsclick-routing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="click\examples\nsclick-simple-lan.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="click\examples\nsclick-udp-client-server-csma.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="click\examples\nsclick-udp-client-server-wifi.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="click\helper\click-internet-stack-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="click\model\ipv4-click-routing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="click\model\ipv4-l3-click-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="click\test\ipv4-click-routing-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config-store\examples\config-store-save.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config-store\model\attribute-default-iterator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config-store\model\attribute-iterator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config-store\model\config-store.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config-store\model\display-functions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config-store\model\file-config.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config-store\model\gtk-config-store.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config-store\model\model-node-creator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config-store\model\model-typeid-creator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config-store\model\raw-text-config.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config-store\model\xml-config.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\bindings\module_helpers.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\examples\main-callback.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\examples\main-ptr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\examples\main-random-variable-stream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\examples\main-random-variable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\examples\main-test-sync.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\examples\sample-random-variable-stream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\examples\sample-random-variable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\examples\sample-simulator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\attribute-construction-list.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\attribute.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\boolean.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\breakpoint.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\calendar-scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\callback.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\command-line.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\config.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\default-simulator-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\double.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\enum.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\event-id.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\event-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\fatal-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\global-value.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\heap-scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\int64x64-128.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\int64x64-cairo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\int64x64.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\integer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\list-scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\log.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\make-event.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\map-scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\names.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\object-base.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\object-factory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\object-ptr-container.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\object.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\pointer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\random-variable-stream-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\random-variable-stream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\random-variable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\realtime-simulator-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\ref-count-base.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\rng-seed-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\rng-stream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\simulator-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\simulator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\string.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\synchronizer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\system-path.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\system-thread.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\time.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\timer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\trace-source-accessor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\type-id.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\type-name.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\uinteger.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\unix-fd-reader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\unix-system-condition.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\unix-system-mutex.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\unix-system-wall-clock-ms.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\vector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\wall-clock-synchronizer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\watchdog.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\win32-system-wall-clock-ms.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model\cairo-wideint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\attribute-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\callback-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\command-line-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\config-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\global-value-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\int64x64-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\names-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\object-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\ptr-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\random-variable-stream-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\random-variable-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\rng-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\sample-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\simulator-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\threaded-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\time-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\timer-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\traced-callback-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\type-traits-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\test\watchdog-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csma\examples\csma-broadcast.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csma\examples\csma-multicast.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csma\examples\csma-one-subnet.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csma\examples\csma-packet-socket.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csma\examples\csma-ping.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csma\examples\csma-raw-ip-socket.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csma\helper\csma-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csma\model\backoff.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csma\model\csma-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csma\model\csma-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csma-layout\examples\csma-star.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csma-layout\model\csma-star-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsdv\examples\dsdv-manet.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsdv\helper\dsdv-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsdv\model\dsdv-packet-queue.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsdv\model\dsdv-packet.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsdv\model\dsdv-routing-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsdv\model\dsdv-rtable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsdv\test\dsdv-testcase.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\examples\dsr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\helper\dsr-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\helper\dsr-main-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\model\dsr-errorbuff.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\model\dsr-fs-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\model\dsr-gratuitous-reply-table.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\model\dsr-maintain-buff.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\model\dsr-network-queue.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\model\dsr-option-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\model\dsr-options.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\model\dsr-rcache.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\model\dsr-routing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\model\dsr-rreq-table.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\model\dsr-rsendbuff.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsr\test\dsr-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\examples\emu-ping.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\examples\emu-udp-echo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\helper\emu-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\model\emu-encode-decode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\model\emu-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\model\emu-sock-creator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\examples\li-ion-energy-source.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\helper\basic-energy-source-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\helper\energy-model-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\helper\energy-source-container.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\helper\rv-battery-model-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\helper\wifi-radio-energy-model-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\model\basic-energy-source.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\model\device-energy-model-container.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\model\device-energy-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\model\energy-source.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\model\li-ion-energy-source.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\model\rv-battery-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\model\simple-device-energy-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\model\wifi-radio-energy-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\test\basic-energy-model-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\test\li-ion-energy-source-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="energy\test\rv-battery-model-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flow-monitor\helper\flow-monitor-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flow-monitor\model\flow-classifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flow-monitor\model\flow-monitor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flow-monitor\model\flow-probe.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flow-monitor\model\histogram.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flow-monitor\model\ipv4-flow-classifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flow-monitor\model\ipv4-flow-probe.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flow-monitor\test\histogram-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\examples\main-simple.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\helper\internet-stack-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\helper\internet-trace-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\helper\ipv4-address-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\helper\ipv4-global-routing-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\helper\ipv4-interface-container.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\helper\ipv4-list-routing-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\helper\ipv4-routing-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\helper\ipv4-static-routing-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\helper\ipv6-address-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\helper\ipv6-interface-container.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\helper\ipv6-list-routing-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\helper\ipv6-routing-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\helper\ipv6-static-routing-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\arp-cache.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\arp-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\arp-l3-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\candidate-queue.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\global-route-manager-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\global-route-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\global-router-interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\icmpv4-l4-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\icmpv4.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\icmpv6-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\icmpv6-l4-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ip-l4-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-address-generator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-end-point-demux.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-end-point.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-global-routing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-interface-address.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-l3-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-list-routing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-packet-info-tag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-raw-socket-factory-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-raw-socket-factory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-raw-socket-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-route.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-routing-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-routing-table-entry.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4-static-routing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv4.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-address-generator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-autoconfigured-prefix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-end-point-demux.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-end-point.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-extension-demux.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-extension-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-extension.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-interface-address.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-l3-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-list-routing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-option-demux.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-option-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-option.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-packet-info-tag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-raw-socket-factory-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-raw-socket-factory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-raw-socket-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-route.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-routing-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-routing-table-entry.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6-static-routing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ipv6.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\loopback-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\ndisc-cache.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\nsc-sysctl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\nsc-tcp-l4-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\nsc-tcp-socket-factory-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\nsc-tcp-socket-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\pending-data.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\rtt-estimator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\seq-ts-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-l4-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-newreno.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-option-end.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-option-mss.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-option-no-op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-option-sack-permitted.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-option-sack.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-option-ts.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-option-winscale.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-option.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-reno.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-rfc793.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-rx-buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-socket-base.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-socket-factory-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-socket-factory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-socket.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-tahoe.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\tcp-tx-buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\udp-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\udp-l4-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\udp-socket-factory-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\udp-socket-factory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\udp-socket-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\model\udp-socket.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\error-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\error-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\global-route-manager-impl-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv4-address-generator-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv4-address-helper-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv4-fragmentation-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv4-header-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv4-list-routing-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv4-packet-info-tag-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv4-raw-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv4-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv6-address-generator-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv6-address-helper-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv6-dual-stack-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv6-extension-header-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv6-fragmentation-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv6-list-routing-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv6-packet-info-tag-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\ipv6-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\tcp-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internet\test\udp-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\examples\lena-cqi-threshold.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\examples\lena-dual-stripe.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\examples\lena-fading.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\examples\lena-intercell-interference.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\examples\lena-pathloss-traces.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\examples\lena-profiling.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\examples\lena-rem-sector-antenna.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\examples\lena-rem.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\examples\lena-rlc-traces.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\examples\lena-simple-epc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\examples\lena-simple.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\helper\epc-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\helper\lte-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\helper\lte-hex-grid-enb-topology-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\helper\lte-stats-calculator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\helper\mac-stats-calculator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\helper\radio-bearer-stats-calculator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\helper\radio-environment-map-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\epc-enb-application.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\epc-gtpu-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\epc-sgw-pgw-application.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\epc-tft-classifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\epc-tft.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\eps-bearer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\ff-mac-csched-sap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\ff-mac-sched-sap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\ff-mac-scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\ideal-control-messages.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-amc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-enb-cmac-sap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-enb-mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-enb-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-enb-phy-sap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-enb-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-enb-rrc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-interference.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-mac-sap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-mi-error-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-pdcp-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-pdcp-sap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-pdcp-tag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-pdcp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-phy-tag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-radio-bearer-info.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-radio-bearer-tag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-rlc-am-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-rlc-am.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-rlc-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-rlc-sap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-rlc-sdu-status-tag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-rlc-sequence-number.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-rlc-tag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-rlc-um.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-rlc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-sinr-chunk-processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-spectrum-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-spectrum-signal-parameters.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-spectrum-value-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-ue-cmac-sap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-ue-mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-ue-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-ue-phy-sap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-ue-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\lte-ue-rrc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\pf-ff-mac-scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\rem-spectrum-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\rr-ff-mac-scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\model\trace-fading-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\epc-test-gtpu.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\epc-test-s1u-downlink.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\epc-test-s1u-uplink.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-simple-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-simple-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-downlink-sinr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-earfcn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-entities.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-fading.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-interference.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-link-adaptation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-mimo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-pathloss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-pf-ff-mac-scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-phy-error-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-rlc-am-e2e.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-rlc-am-transmitter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-rlc-um-e2e.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-rlc-um-transmitter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-rr-ff-mac-scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-sinr-chunk-processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-spectrum-value-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-ue-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\lte-test-uplink-sinr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\test-epc-tft-classifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\test-lte-antenna.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lte\test\test-lte-epc-e2e-data.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\examples\mesh.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\helper\mesh-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\helper\dot11s\dot11s-installer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\helper\flame\flame-installer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\mesh-information-element-vector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\mesh-l2-routing-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\mesh-point-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\mesh-wifi-beacon.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\mesh-wifi-interface-mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\airtime-metric.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\dot11s-mac-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\hwmp-protocol-mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\hwmp-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\hwmp-rtable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\hwmp-tag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\ie-dot11s-beacon-timing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\ie-dot11s-configuration.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\ie-dot11s-id.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\ie-dot11s-metric-report.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\ie-dot11s-peer-management.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\ie-dot11s-peering-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\ie-dot11s-perr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\ie-dot11s-prep.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\ie-dot11s-preq.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\ie-dot11s-rann.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\peer-link-frame.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\peer-link.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\peer-management-protocol-mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\dot11s\peer-management-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\flame\flame-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\flame\flame-protocol-mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\flame\flame-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\model\flame\flame-rtable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\test\mesh-information-element-vector-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\test\dot11s\dot11s-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\test\dot11s\hwmp-proactive-regression.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\test\dot11s\hwmp-reactive-regression.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\test\dot11s\hwmp-simplest-regression.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\test\dot11s\hwmp-target-flags-regression.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\test\dot11s\pmp-regression.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\test\dot11s\regression.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\test\flame\flame-regression.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\test\flame\flame-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh\test\flame\regression.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\examples\main-grid-topology.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\examples\main-random-topology.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\examples\main-random-walk.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\helper\mobility-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\helper\ns2-mobility-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\box.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\constant-acceleration-mobility-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\constant-position-mobility-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\constant-velocity-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\constant-velocity-mobility-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\gauss-markov-mobility-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\hierarchical-mobility-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\mobility-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\position-allocator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\random-direction-2d-mobility-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\random-walk-2d-mobility-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\random-waypoint-mobility-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\rectangle.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\steady-state-random-waypoint-mobility-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\waypoint-mobility-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\model\waypoint.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\test\ns2-mobility-helper-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\test\steady-state-random-waypoint-mobility-model-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mobility\test\waypoint-mobility-model-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpi\examples\nms-p2p-nix-distributed.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpi\examples\simple-distributed.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpi\examples\third-distributed.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpi\model\distributed-simulator-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpi\model\mpi-interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpi\model\mpi-receiver.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="netanim\examples\dumbbell-animation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="netanim\examples\dynamic_linknode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="netanim\examples\grid-animation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="netanim\examples\star-animation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="netanim\examples\uan-animation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="netanim\examples\wireless-animation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="netanim\helper\animation-interface-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="netanim\model\animation-interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="netanim\test\netanim-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\examples\droptail_vs_red.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\examples\main-packet-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\examples\main-packet-tag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\examples\red-tests.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\helper\application-container.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\helper\broadcom-node-container.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\helper\leaky-bucket-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\helper\net-device-container.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\helper\node-container.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\helper\packet-socket-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\helper\trace-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\address.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\application.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\broadcom-node.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\byte-tag-list.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\channel-list.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\chunk.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\nix-vector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\node-list.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\node.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\packet-metadata.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\packet-tag-list.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\packet.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\socket-factory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\socket.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\tag-buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\tag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\model\trailer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\test\buffer-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\test\drop-tail-queue-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\test\ipv6-address-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\test\packet-metadata-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\test\packet-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\test\packetbb-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\test\pcap-file-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\test\red-queue-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\test\sequence-number-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\address-utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\broadcom-egress-queue.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\data-rate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\drop-tail-queue.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\error-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\ethernet-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\ethernet-trailer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\flow-id-tag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\inet-socket-address.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\inet6-socket-address.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\ipv4-address.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\ipv6-address.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\leaky-bucket.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\llc-snap-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\mac48-address.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\mac64-address.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\output-stream-wrapper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\packet-burst.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\packet-socket-address.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\packet-socket-factory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\packet-socket.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\packetbb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\pcap-file-wrapper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\pcap-file.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\queue.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\radiotap-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\red-queue.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\simple-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\utils\simple-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nix-vector-routing\examples\nix-simple.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nix-vector-routing\examples\nms-p2p-nix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nix-vector-routing\helper\ipv4-nix-vector-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nix-vector-routing\model\ipv4-nix-vector-routing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="olsr\examples\olsr-hna.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="olsr\examples\simple-point-to-point-olsr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="olsr\helper\olsr-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="olsr\model\olsr-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="olsr\model\olsr-routing-protocol.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="olsr\model\olsr-state.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="olsr\test\bug780-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="olsr\test\hello-regression-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="olsr\test\olsr-header-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="olsr\test\olsr-routing-protocol-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="olsr\test\regression-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="olsr\test\tc-regression-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="openflow\examples\openflow-switch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="openflow\helper\openflow-switch-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="openflow\model\openflow-interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="openflow\model\openflow-switch-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="openflow\test\openflow-switch-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\examples\main-attribute-value.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\helper\point-to-point-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\helper\qbb-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\model\cn-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\model\pause-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\model\point-to-point-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\model\point-to-point-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\model\point-to-point-remote-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\model\ppp-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\model\qbb-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\model\qbb-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\model\qbb-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\model\qbb-remote-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point\test\point-to-point-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point-layout\model\point-to-point-dumbbell.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point-layout\model\point-to-point-grid.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="point-to-point-layout\model\point-to-point-star.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\examples\jakes-propagation-model-example.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\examples\main-propagation-loss.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\model\cost231-propagation-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\model\itu-r-1411-los-propagation-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\model\itu-r-1411-nlos-over-rooftop-propagation-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\model\jakes-process.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\model\jakes-propagation-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\model\kun-2600-mhz-propagation-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\model\okumura-hata-propagation-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\model\propagation-delay-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\model\propagation-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\test\itu-r-1411-los-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\test\itu-r-1411-nlos-over-rooftop-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\test\kun-2600-mhz-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\test\okumura-hata-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propagation\test\propagation-loss-model-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\examples\adhoc-aloha-ideal-phy-matrix-propagation-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\examples\adhoc-aloha-ideal-phy-with-microwave-oven.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\examples\adhoc-aloha-ideal-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\helper\adhoc-aloha-noack-ideal-phy-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\helper\spectrum-analyzer-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\helper\spectrum-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\helper\waveform-generator-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\aloha-noack-mac-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\aloha-noack-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\constant-spectrum-propagation-loss.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\friis-spectrum-propagation-loss.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\half-duplex-ideal-phy-signal-parameters.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\half-duplex-ideal-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\microwave-oven-spectrum-value-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\multi-model-spectrum-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\non-communicating-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\single-model-spectrum-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\spectrum-analyzer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\spectrum-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\spectrum-converter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\spectrum-error-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\spectrum-interference.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\spectrum-model-300kHz-300GHz-log.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\spectrum-model-ism2400MHz-res1MHz.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\spectrum-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\spectrum-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\spectrum-propagation-loss-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\spectrum-signal-parameters.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\spectrum-value.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\waveform-generator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\model\wifi-spectrum-value-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\test\spectrum-ideal-phy-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\test\spectrum-interference-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum\test\spectrum-value-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stats\model\data-calculator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stats\model\data-collector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stats\model\data-output-interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stats\model\omnet-data-output.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stats\model\packet-data-calculators.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stats\model\sqlite-data-output.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stats\model\time-data-calculators.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stats\test\basic-data-calculators-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tap-bridge\examples\tap-csma-virtual-machine.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tap-bridge\examples\tap-csma.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tap-bridge\examples\tap-wifi-dumbbell.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tap-bridge\examples\tap-wifi-virtual-machine.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tap-bridge\helper\tap-bridge-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tap-bridge\model\tap-bridge.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tap-bridge\model\tap-creator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tap-bridge\model\tap-encode-decode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\csma-system-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\error-model-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\global-routing-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\mobility-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\static-routing-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ns3tcp\ns3tcp-cwnd-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ns3tcp\ns3tcp-interop-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ns3tcp\ns3tcp-loss-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ns3tcp\ns3tcp-no-delay-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ns3tcp\ns3tcp-socket-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ns3tcp\ns3tcp-socket-writer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ns3tcp\ns3tcp-state-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ns3tcp\nsctcp-loss-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ns3wifi\wifi-interference-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ns3wifi\wifi-msdu-aggregator-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\perf\perf-io.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\examples\gnuplot-example.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\model\delay-jitter-estimation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\model\event-garbage-collector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\model\gnuplot.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\test\average-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\test\event-garbage-collector-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="topology-read\examples\topology-example-sim.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="topology-read\helper\topology-reader-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="topology-read\model\inet-topology-reader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="topology-read\model\orbis-topology-reader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="topology-read\model\rocketfuel-topology-reader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="topology-read\model\topology-reader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="topology-read\test\rocketfuel-topology-reader-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\examples\uan-cw-example.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\examples\uan-rc-example.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\helper\acoustic-modem-energy-model-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\helper\uan-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\acoustic-modem-energy-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-address.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-header-common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-header-rc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-mac-aloha.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-mac-cw.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-mac-rc-gw.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-mac-rc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-noise-model-default.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-noise-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-phy-dual.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-phy-gen.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-prop-model-ideal.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-prop-model-thorp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-prop-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-transducer-hd.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-transducer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\model\uan-tx-mode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\test\uan-energy-model-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uan\test\uan-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="virtual-net-device\examples\virtual-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="virtual-net-device\model\virtual-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="visualizer\model\dummy-file-for-static-builds.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="visualizer\model\pyviz.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="visualizer\model\visual-simulator-impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\examples\wifi-phy-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\helper\athstats-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\helper\nqos-wifi-mac-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\helper\qos-wifi-mac-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\helper\wifi-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\helper\yans-wifi-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\aarf-wifi-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\aarfcd-wifi-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\adhoc-wifi-mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\amrr-wifi-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\amsdu-subframe-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\ap-wifi-mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\arf-wifi-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\block-ack-agreement.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\block-ack-cache.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\block-ack-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\capability-information.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\cara-wifi-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\constant-rate-wifi-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\ctrl-headers.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\dca-txop.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\dcf-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\dcf.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\dsss-error-rate-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\edca-txop-n.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\error-rate-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\ideal-wifi-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\interference-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\mac-low.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\mac-rx-middle.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\mac-tx-middle.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\mgt-headers.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\minstrel-wifi-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\msdu-aggregator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\msdu-standard-aggregator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\nist-error-rate-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\onoe-wifi-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\originator-block-ack-agreement.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\qos-blocked-destinations.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\qos-tag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\qos-utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\random-stream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\regular-wifi-mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\rraa-wifi-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\ssid.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\sta-wifi-mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\status-code.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\supported-rates.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\wifi-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\wifi-information-element-vector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\wifi-information-element.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\wifi-mac-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\wifi-mac-queue.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\wifi-mac-trailer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\wifi-mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\wifi-mode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\wifi-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\wifi-phy-state-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\wifi-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\wifi-remote-station-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\yans-error-rate-model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\yans-wifi-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\model\yans-wifi-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\test\block-ack-test-suite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\test\dcf-manager-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\test\tx-duration-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi\test\wifi-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\examples\wimax-ipv4.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\examples\wimax-multicast.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\examples\wimax-simple.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\helper\wimax-helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\bandwidth-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\bs-link-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\bs-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\bs-scheduler-rtps.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\bs-scheduler-simple.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\bs-scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\bs-service-flow-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\bs-uplink-scheduler-mbqos.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\bs-uplink-scheduler-rtps.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\bs-uplink-scheduler-simple.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\bs-uplink-scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\burst-profile-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\cid-factory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\cid.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\connection-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\crc8.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\cs-parameters.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\dl-mac-messages.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\ipcs-classifier-record.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\ipcs-classifier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\mac-messages.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\ofdm-downlink-frame-prefix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\send-params.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\service-flow-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\service-flow-record.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\service-flow.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\simple-ofdm-send-param.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\simple-ofdm-wimax-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\simple-ofdm-wimax-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\snr-to-block-error-rate-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\snr-to-block-error-rate-record.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\ss-link-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\ss-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\ss-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\ss-record.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\ss-scheduler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\ss-service-flow-manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\ul-job.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\ul-mac-messages.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\wimax-channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\wimax-connection.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\wimax-mac-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\wimax-mac-queue.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\wimax-mac-to-mac-header.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\wimax-net-device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\wimax-phy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\model\wimax-tlv.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\test\mac-messages-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\test\phy-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\test\qos-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\test\ss-mac-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\test\wimax-fragmentation-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\test\wimax-service-flow-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wimax\test\wimax-tlv-test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="antenna\model\angles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="antenna\model\antenna-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="antenna\model\cosine-antenna-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="antenna\model\isotropic-antenna-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="antenna\model\parabolic-antenna-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aodv\doc\aodv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aodv\helper\aodv-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aodv\model\aodv-dpd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aodv\model\aodv-id-cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aodv\model\aodv-neighbor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aodv\model\aodv-packet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aodv\model\aodv-routing-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aodv\model\aodv-rqueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aodv\model\aodv-rtable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aodv\test\aodv-regression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aodv\test\bug-772.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aodv\test\loopback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\bindings\scan-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\doc\applications.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\helper\bulk-send-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\helper\on-off-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\helper\packet-sink-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\helper\ping6-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\helper\udp-client-server-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\helper\udp-echo-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\helper\v4ping-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\bulk-send-application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\onoff-application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\packet-loss-counter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\packet-sink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\ping6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\radvd-interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\radvd-prefix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\radvd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\seq-ts-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\udp-client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\udp-echo-client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\udp-echo-server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\udp-server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\udp-trace-client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\model\v4ping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bridge\helper\bridge-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bridge\model\bridge-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bridge\model\bridge-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildings\helper\building-allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildings\helper\building-container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildings\helper\building-position-allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildings\helper\buildings-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildings\model\building-list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildings\model\building.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildings\model\buildings-mobility-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildings\model\buildings-propagation-loss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildings\model\hybrid-buildings-propagation-loss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildings\model\itu-r-1238-propagation-loss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildings\model\oh-buildings-propagation-loss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildings\test\buildings-pathloss-test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildings\test\buildings-shadowing-test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="click\helper\click-internet-stack-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="click\model\ipv4-click-routing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="click\model\ipv4-l3-click-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config-store\model\attribute-default-iterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config-store\model\attribute-iterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config-store\model\config-store.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config-store\model\display-functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config-store\model\file-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config-store\model\gtk-config-store.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config-store\model\model-node-creator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config-store\model\model-typeid-creator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config-store\model\raw-text-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config-store\model\xml-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\bindings\scan-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\abort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\attribute-accessor-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\attribute-construction-list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\attribute-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\attribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\boolean.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\breakpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\cairo-wideint-private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\calendar-scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\callback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\command-line.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\default-deleter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\default-simulator-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\deprecated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\double.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\empty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\enum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\event-id.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\event-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\fatal-error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\fatal-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\global-value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\heap-scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\int-to-type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\int64x64-128.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\int64x64-cairo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\int64x64-double.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\int64x64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\integer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\list-scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\make-event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\map-scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\names.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\nstime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\object-base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\object-factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\object-map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\object-ptr-container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\object-vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\pointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\ptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\random-variable-stream-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\random-variable-stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\random-variable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\realtime-simulator-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\ref-count-base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\rng-seed-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\rng-stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\simple-ref-count.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\simulation-singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\simulator-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\simulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\synchronizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\system-condition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\system-mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\system-path.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\system-thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\system-wall-clock-ms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\timer-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\trace-source-accessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\traced-callback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\traced-value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\type-id.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\type-name.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\type-traits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\uinteger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\unix-fd-reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\unused.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\wall-clock-synchronizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model\watchdog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="csma\bindings\scan-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="csma\helper\csma-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="csma\model\backoff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="csma\model\csma-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="csma\model\csma-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="csma-layout\model\csma-star-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsdv\doc\dsdv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsdv\helper\dsdv-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsdv\model\dsdv-packet-queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsdv\model\dsdv-packet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsdv\model\dsdv-routing-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsdv\model\dsdv-rtable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\doc\dsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\helper\dsr-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\helper\dsr-main-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\model\dsr-errorbuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\model\dsr-fs-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\model\dsr-gratuitous-reply-table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\model\dsr-maintain-buff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\model\dsr-network-queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\model\dsr-option-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\model\dsr-options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\model\dsr-rcache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\model\dsr-routing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\model\dsr-rreq-table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsr\model\dsr-rsendbuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\helper\emu-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\model\emu-encode-decode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\model\emu-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="energy\helper\basic-energy-source-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="energy\helper\energy-model-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="energy\helper\energy-source-container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="energy\helper\rv-battery-model-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="energy\helper\wifi-radio-energy-model-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="energy\model\basic-energy-source.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="energy\model\device-energy-model-container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="energy\model\device-energy-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="energy\model\energy-source.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="energy\model\li-ion-energy-source.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="energy\model\rv-battery-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="energy\model\simple-device-energy-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="energy\model\wifi-radio-energy-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flow-monitor\helper\flow-monitor-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flow-monitor\model\flow-classifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flow-monitor\model\flow-monitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flow-monitor\model\flow-probe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flow-monitor\model\histogram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flow-monitor\model\ipv4-flow-classifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flow-monitor\model\ipv4-flow-probe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\doc\internet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\helper\internet-stack-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\helper\internet-trace-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\helper\ipv4-address-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\helper\ipv4-global-routing-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\helper\ipv4-interface-container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\helper\ipv4-list-routing-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\helper\ipv4-routing-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\helper\ipv4-static-routing-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\helper\ipv6-address-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\helper\ipv6-interface-container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\helper\ipv6-list-routing-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\helper\ipv6-routing-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\helper\ipv6-static-routing-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\arp-cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\arp-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\arp-l3-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\candidate-queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\global-route-manager-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\global-route-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\global-router-interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\global-routing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\icmpv4-l4-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\icmpv4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\icmpv6-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\icmpv6-l4-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ip-l4-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-address-generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-end-point-demux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-end-point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-global-routing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-interface-address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-l3-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-list-routing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-packet-info-tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-raw-socket-factory-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-raw-socket-factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-raw-socket-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-route.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-routing-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-routing-table-entry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4-static-routing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-address-generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-autoconfigured-prefix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-end-point-demux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-end-point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-extension-demux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-extension-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-extension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-interface-address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-l3-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-list-routing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-option-demux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-option-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-option.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-packet-info-tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-raw-socket-factory-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-raw-socket-factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-raw-socket-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-route.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-routing-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-routing-table-entry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6-static-routing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ipv6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\loopback-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\ndisc-cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\nsc-sysctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\nsc-tcp-l4-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\nsc-tcp-socket-factory-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\nsc-tcp-socket-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\pending-data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\rtt-estimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\seq-ts-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\sim_errno.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\sim_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-l4-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-newreno.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-option-end.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-option-mss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-option-no-op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-option-sack-permitted.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-option-sack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-option-ts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-option-winscale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-option.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-reno.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-rfc793.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-rx-buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-socket-base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-socket-factory-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-socket-factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-tahoe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\tcp-tx-buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\udp-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\udp-l4-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\udp-socket-factory-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\udp-socket-factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\udp-socket-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\model\udp-socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\test\error-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internet\test\error-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\helper\epc-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\helper\lte-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\helper\lte-hex-grid-enb-topology-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\helper\lte-stats-calculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\helper\mac-stats-calculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\helper\radio-bearer-stats-calculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\helper\radio-environment-map-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\epc-enb-application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\epc-gtpu-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\epc-sgw-pgw-application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\epc-tft-classifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\epc-tft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\eps-bearer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\ff-mac-common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\ff-mac-csched-sap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\ff-mac-sched-sap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\ff-mac-scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\ideal-control-messages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-amc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-enb-cmac-sap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-enb-mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-enb-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-enb-phy-sap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-enb-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-enb-rrc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-interference.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-mac-sap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-mi-error-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-pdcp-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-pdcp-sap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-pdcp-tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-pdcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-phy-tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-radio-bearer-info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-radio-bearer-tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-rlc-am-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-rlc-am.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-rlc-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-rlc-sap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-rlc-sdu-status-tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-rlc-sequence-number.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-rlc-tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-rlc-um.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-rlc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-sinr-chunk-processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-spectrum-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-spectrum-signal-parameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-spectrum-value-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-ue-cmac-sap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-ue-mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-ue-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-ue-phy-sap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-ue-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\lte-ue-rrc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\pf-ff-mac-scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\rem-spectrum-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\rr-ff-mac-scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\model\trace-fading-loss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\epc-test-gtpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-simple-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-simple-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-downlink-sinr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-entities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-fading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-interference.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-link-adaptation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-mimo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-pathloss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-pf-ff-mac-scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-phy-error-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-rlc-am-e2e.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-rlc-am-transmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-rlc-um-e2e.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-rlc-um-transmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-rr-ff-mac-scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-sinr-chunk-processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-ue-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lte\test\lte-test-uplink-sinr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\doc\mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\helper\mesh-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\helper\mesh-stack-installer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\helper\dot11s\dot11s-installer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\helper\flame\flame-installer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\mesh-information-element-vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\mesh-information-element.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\mesh-l2-routing-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\mesh-point-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\mesh-wifi-beacon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\mesh-wifi-interface-mac-plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\mesh-wifi-interface-mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\airtime-metric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\dot11s-mac-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\dot11s.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\hwmp-protocol-mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\hwmp-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\hwmp-rtable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\hwmp-tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\ie-dot11s-beacon-timing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\ie-dot11s-configuration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\ie-dot11s-id.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\ie-dot11s-metric-report.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\ie-dot11s-peer-management.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\ie-dot11s-peering-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\ie-dot11s-perr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\ie-dot11s-prep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\ie-dot11s-preq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\ie-dot11s-rann.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\peer-link-frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\peer-link.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\peer-management-protocol-mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\dot11s\peer-management-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\flame\flame-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\flame\flame-protocol-mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\flame\flame-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\model\flame\flame-rtable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\test\dot11s\hwmp-proactive-regression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\test\dot11s\hwmp-reactive-regression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\test\dot11s\hwmp-simplest-regression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\test\dot11s\hwmp-target-flags-regression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\test\dot11s\pmp-regression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\test\flame\flame-regression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\helper\mobility-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\helper\ns2-mobility-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\box.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\constant-acceleration-mobility-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\constant-position-mobility-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\constant-velocity-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\constant-velocity-mobility-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\gauss-markov-mobility-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\hierarchical-mobility-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\mobility-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\mobility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\position-allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\random-direction-2d-mobility-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\random-walk-2d-mobility-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\random-waypoint-mobility-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\rectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\steady-state-random-waypoint-mobility-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\waypoint-mobility-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mobility\model\waypoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpi\model\distributed-simulator-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpi\model\mpi-interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpi\model\mpi-receiver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="netanim\examples\uan-animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="netanim\helper\animation-interface-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="netanim\model\animation-interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\bindings\scan-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\doc\network.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\helper\application-container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\helper\broadcom-node-container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\helper\leaky-bucket-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\helper\net-device-container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\helper\node-container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\helper\packet-socket-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\helper\trace-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\broadcom-node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\byte-tag-list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\channel-list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\chunk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\nix-vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\node-list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\packet-metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\packet-tag-list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\packet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\socket-factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\tag-buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\model\trailer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\address-utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\broadcom-egress-queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\broadcom-ingressl-queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\data-rate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\drop-tail-queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\error-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\ethernet-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\ethernet-trailer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\flow-id-tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\generic-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\inet-socket-address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\inet6-socket-address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\ipv4-address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\ipv6-address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\leaky-bucket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\llc-snap-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\mac48-address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\mac64-address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\output-stream-wrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\packet-burst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\packet-socket-address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\packet-socket-factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\packet-socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\packetbb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\pcap-file-wrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\pcap-file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\pcap-test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\radiotap-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\red-queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\sequence-number.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\sgi-hashmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\simple-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network\utils\simple-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nix-vector-routing\doc\nix-vector-routing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nix-vector-routing\helper\ipv4-nix-vector-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nix-vector-routing\model\ipv4-nix-vector-routing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="olsr\helper\olsr-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="olsr\model\olsr-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="olsr\model\olsr-repositories.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="olsr\model\olsr-routing-protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="olsr\model\olsr-state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="olsr\test\bug780-test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="olsr\test\hello-regression-test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="olsr\test\tc-regression-test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="openflow\helper\openflow-switch-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="openflow\model\openflow-interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="openflow\model\openflow-switch-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point\bindings\scan-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point\helper\point-to-point-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point\helper\qbb-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point\model\cn-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point\model\pause-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point\model\point-to-point-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point\model\point-to-point-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point\model\point-to-point-remote-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point\model\ppp-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point\model\qbb-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point\model\qbb-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point\model\qbb-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point\model\qbb-remote-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point-layout\model\point-to-point-dumbbell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point-layout\model\point-to-point-grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point-to-point-layout\model\point-to-point-star.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="propagation\bindings\scan-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="propagation\model\cost231-propagation-loss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="propagation\model\itu-r-1411-los-propagation-loss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="propagation\model\itu-r-1411-nlos-over-rooftop-propagation-loss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="propagation\model\jakes-process.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="propagation\model\jakes-propagation-loss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="propagation\model\kun-2600-mhz-propagation-loss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="propagation\model\okumura-hata-propagation-loss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="propagation\model\propagation-cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="propagation\model\propagation-delay-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="propagation\model\propagation-environment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="propagation\model\propagation-loss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\helper\adhoc-aloha-noack-ideal-phy-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\helper\spectrum-analyzer-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\helper\spectrum-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\helper\waveform-generator-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\aloha-noack-mac-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\aloha-noack-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\constant-spectrum-propagation-loss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\friis-spectrum-propagation-loss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\half-duplex-ideal-phy-signal-parameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\half-duplex-ideal-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\microwave-oven-spectrum-value-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\multi-model-spectrum-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\non-communicating-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\single-model-spectrum-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\spectrum-analyzer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\spectrum-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\spectrum-converter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\spectrum-error-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\spectrum-interference.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\spectrum-model-300kHz-300GHz-log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\spectrum-model-ism2400MHz-res1MHz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\spectrum-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\spectrum-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\spectrum-propagation-loss-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\spectrum-signal-parameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\spectrum-value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\waveform-generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\model\wifi-spectrum-value-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum\test\spectrum-test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stats\model\basic-data-calculators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stats\model\data-calculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stats\model\data-collector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stats\model\data-output-interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stats\model\omnet-data-output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stats\model\packet-data-calculators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stats\model\sqlite-data-output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stats\model\time-data-calculators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tap-bridge\doc\tap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tap-bridge\helper\tap-bridge-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tap-bridge\model\tap-bridge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tap-bridge\model\tap-encode-decode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\ns3tcp\ns3tcp-socket-writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\ns3tcp\ns3tcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\ns3wifi\ns3wifi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\model\average.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\model\delay-jitter-estimation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\model\event-garbage-collector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\model\gnuplot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="topology-read\doc\topology.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="topology-read\helper\topology-reader-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="topology-read\model\inet-topology-reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="topology-read\model\orbis-topology-reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="topology-read\model\rocketfuel-topology-reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="topology-read\model\topology-reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\examples\uan-cw-example.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\examples\uan-rc-example.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\helper\acoustic-modem-energy-model-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\helper\uan-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\acoustic-modem-energy-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-header-common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-header-rc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-mac-aloha.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-mac-cw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-mac-rc-gw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-mac-rc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-noise-model-default.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-noise-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-phy-dual.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-phy-gen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-prop-model-ideal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-prop-model-thorp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-prop-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-transducer-hd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-transducer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uan\model\uan-tx-mode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="virtual-net-device\model\virtual-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="visualizer\model\pyviz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="visualizer\model\visual-simulator-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\bindings\scan-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\helper\athstats-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\helper\nqos-wifi-mac-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\helper\qos-wifi-mac-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\helper\wifi-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\helper\yans-wifi-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\aarf-wifi-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\aarfcd-wifi-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\adhoc-wifi-mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\amrr-wifi-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\amsdu-subframe-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\ap-wifi-mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\arf-wifi-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\block-ack-agreement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\block-ack-cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\block-ack-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\capability-information.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\cara-wifi-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\constant-rate-wifi-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\ctrl-headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\dca-txop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\dcf-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\dcf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\dsss-error-rate-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\edca-txop-n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\error-rate-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\ideal-wifi-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\interference-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\mac-low.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\mac-rx-middle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\mac-tx-middle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\mgt-headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\minstrel-wifi-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\msdu-aggregator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\msdu-standard-aggregator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\nist-error-rate-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\onoe-wifi-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\originator-block-ack-agreement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\qos-blocked-destinations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\qos-tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\qos-utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\random-stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\regular-wifi-mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\rraa-wifi-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\ssid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\sta-wifi-mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\status-code.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\supported-rates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-information-element-vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-information-element.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-mac-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-mac-queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-mac-trailer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-mode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-phy-standard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-phy-state-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-preamble.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\wifi-remote-station-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\yans-error-rate-model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\yans-wifi-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi\model\yans-wifi-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\helper\wimax-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\bandwidth-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\bs-link-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\bs-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\bs-scheduler-rtps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\bs-scheduler-simple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\bs-scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\bs-service-flow-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\bs-uplink-scheduler-mbqos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\bs-uplink-scheduler-rtps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\bs-uplink-scheduler-simple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\bs-uplink-scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\burst-profile-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\bvec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\cid-factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\cid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\connection-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\crc8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\cs-parameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\default-traces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\dl-mac-messages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\ipcs-classifier-record.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\ipcs-classifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\mac-messages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\ofdm-downlink-frame-prefix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\send-params.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\service-flow-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\service-flow-record.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\service-flow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\simple-ofdm-send-param.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\simple-ofdm-wimax-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\simple-ofdm-wimax-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\snr-to-block-error-rate-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\snr-to-block-error-rate-record.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\ss-link-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\ss-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\ss-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\ss-record.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\ss-scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\ss-service-flow-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\ul-job.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\ul-mac-messages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\wimax-channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\wimax-connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\wimax-mac-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\wimax-mac-queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\wimax-mac-to-mac-header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\wimax-net-device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\wimax-phy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wimax\model\wimax-tlv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -29,4 +29,8 @@
 #include "udp-trace-client.h"
 #include "v4ping-helper.h"
 #include "v4ping.h"
+#include "timely-sender.h"
+#include "timely-sender.h"
+#include "timely-sender-receiver-helper.h"
+#include "timely-trace-client.h"
 #endif
