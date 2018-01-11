@@ -445,6 +445,7 @@ Node::SetNodeType(uint32_t type, bool dynamicth)
 	if (type==1)
 	{
 		m_broadcom = CreateObject<BroadcomNode>();
+		m_broadcom->SetId(m_id);
 		if (dynamicth)
 		{
 			m_broadcom->SetDynamicThreshold();
@@ -459,6 +460,7 @@ Node::SetNodeType(uint32_t type)
 	if (type==1)
 	{
 		m_broadcom = CreateObject<BroadcomNode>();
+		m_broadcom->SetId(m_id);
 	}
 }
 

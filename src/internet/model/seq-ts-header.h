@@ -49,11 +49,16 @@ public:
    * \return the time stamp
    */
   Time GetTs (void) const;
+  uint64_t GetTsAsUint64() { return m_ts; };
+  void SetTsAsUint64(uint64_t ts) { m_ts = ts; };
 
   void SetPG (uint16_t pg);
   uint16_t GetPG () const;
 
   static TypeId GetTypeId (void);
+  void SetAckNeeded() { m_ackNeeded = 1; }
+  uint8_t GetAckNeeded() { return m_ackNeeded; }
+
 private:
   virtual TypeId GetInstanceTypeId (void) const;
   virtual void Print (std::ostream &os) const;
@@ -64,6 +69,7 @@ private:
   uint32_t m_seq;
   uint64_t m_ts;
   uint16_t m_pg;
+  uint8_t m_ackNeeded;
 };
 
 } // namespace ns3

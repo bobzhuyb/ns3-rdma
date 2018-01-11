@@ -26,7 +26,7 @@
 #include "ns3/packet.h"
 #include "ns3/uinteger.h"
 #include "ns3/trace-source-accessor.h"
-
+#include "ns3/seq-ts-header.h"
 #include <algorithm>
 
 NS_LOG_COMPONENT_DEFINE ("PacketSocket");
@@ -253,6 +253,10 @@ PacketSocket::Listen (void)
 int
 PacketSocket::Send (Ptr<Packet> p, uint32_t flags)
 {
+	//SeqTsHeader sth;
+	//p->PeekHeader(sth);
+	//std::cout << "in packet socket send " << sth.GetSeq() << "\n";
+
   NS_LOG_FUNCTION (this << p << flags);
   if (m_state == STATE_OPEN ||
       m_state == STATE_BOUND)
@@ -298,6 +302,10 @@ PacketSocket::GetTxAvailable (void) const
 int
 PacketSocket::SendTo (Ptr<Packet> p, uint32_t flags, const Address &address)
 {
+	//SeqTsHeader sth;
+	//p->PeekHeader(sth);
+	//std::cout << "in packet socket sendto " << sth.GetSeq() << "\n";
+
   NS_LOG_FUNCTION (this << p << flags << address);
   PacketSocketAddress ad;
   if (m_state == STATE_CLOSED)
@@ -327,9 +335,13 @@ PacketSocket::SendTo (Ptr<Packet> p, uint32_t flags, const Address &address)
 
   bool error = false;
   Address dest = ad.GetPhysicalAddress ();
+
+  
+
   if (ad.IsSingleDevice ())
     {
       Ptr<NetDevice> device = m_node->GetDevice (ad.GetSingleDevice ());
+
       if (!device->Send (p, dest, ad.GetProtocol ()))
         {
           NS_LOG_LOGIC ("error: NetDevice::Send error");
@@ -341,6 +353,7 @@ PacketSocket::SendTo (Ptr<Packet> p, uint32_t flags, const Address &address)
       for (uint32_t i = 0; i < m_node->GetNDevices (); i++)
         {
           Ptr<NetDevice> device = m_node->GetDevice (i);
+		  
           if (!device->Send (p, dest, ad.GetProtocol ()))
             {
               NS_LOG_LOGIC ("error: NetDevice::Send error");

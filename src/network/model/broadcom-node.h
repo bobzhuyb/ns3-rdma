@@ -107,8 +107,11 @@ public:
 	bool ShouldSendCN(uint32_t indev, uint32_t ifindex, uint32_t qIndex);
 
 	uint32_t GetUsedBufferTotal();
+	uint32_t GetUsedIngressBuffer(uint32_t port);
 
 	void SetDynamicThreshold();
+
+	void SetId(int id);
 
 protected:
 	//yibo
@@ -117,6 +120,7 @@ protected:
 
 private:
 
+	int m_id;
 	uint32_t m_maxBufferBytes;
 	uint32_t m_usedTotalBytes;
 

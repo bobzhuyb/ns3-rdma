@@ -25,7 +25,11 @@
 //#include "ns3/fivetuple.h"
 #include "ns3/event-id.h"
 #include "ns3/broadcom-egress-queue.h"
+#include "ns3/ipv4.h"
+#include "ns3/ipv4-header.h"
+#include "ns3/udp-header.h"
 #include <vector>
+#include<map>
 
 namespace ns3 {
 
@@ -38,7 +42,7 @@ class QbbNetDevice : public PointToPointNetDevice
 public:
   static const uint32_t qCnt = 8;	// Number of queues/priorities used
   static const uint32_t pCnt = 64;	// Number of ports used
-  static const uint32_t fCnt = 128; // Max number of flows on a NIC
+  static const uint32_t fCnt = 128; // Max number of flows on a NIC, for TX and RX respectively. TX+RX=fCnt*2
   static const uint32_t maxHop = 1; // Max hop count in the network. should not exceed 16 
 
   static TypeId GetTypeId (void);
@@ -86,6 +90,9 @@ public:
   bool Attach (Ptr<QbbChannel> ch);
   
   uint32_t GetPriority(Ptr<Packet> p);
+  uint32_t GetSeq(Ptr<Packet> p);
+  //uint16_t GetPort(Ptr<Packet> p);
+  //uint32_t GetQbbPriority(Ptr<Packet> p);
 
    void SetBroadcomParams(
 	    uint32_t pausetime,
@@ -103,6 +110,8 @@ public:
 
    void SetQueue (Ptr<BEgressQueue> q);
    Ptr<BEgressQueue> GetQueue ();
+
+   uint32_t GetUsedIngressBuffer(uint32_t port);
 
 protected:
 
@@ -233,7 +242,6 @@ protected:
   double m_qcn_np_sampling_interval;
   double m_qcn_np_sampling;
 
-
   //qcn
 
   struct ECNAccount{
@@ -275,8 +283,47 @@ protected:
   uint32_t m_ECNEgressCount[pCnt];
 
 
+  // Methods and members related to NACK functionality. 
+
+  //void CreateFiveTupleKey(Ptr<Packet> packet, char *fiveTuple);
+  //void CreateFiveTupleKey(Ipv4Header iph, UdpHeader udph, char *fiveTuple);
+
+  //int ReceiverCheckSeq(Ipv4Header iph, UdpHeader udph, int seq, std::string &found_key);
+  //int ReceiverGetNextSeq(Ptr<Packet> packet);
+  //void ReceiverSendNACK(Ptr<Packet> packet);
+
+  //void SenderAddQbbHeader(Ptr<Packet> packet);
+  //int SenderGetNextSeq(Ptr<Packet> packet);
+ // void ProcessNACK(Ptr<Packet> packet);
+  //void SenderAddQbbHeader(Ptr<Packet> p, uint32_t qIndex);
+  //void ReceiverRemoveQbbHeader(Ptr<Packet> p);
+
+  //std::map<std::string, int> SenderNextSeq;
+  //std::map<std::string, int> ReceiverNextExpectedSeq;
+  //nack
+  //std::map<std::string, Time> m_nackTimer;
+  //std::map<std::string, int32_t> m_lastNACK;
+  //uint32_t SenderNextSeq[fCnt];
+  //std::map<std::string, int32_t> m_milestone;
 
 
+  int ReceiverCheckSeq(uint32_t seq, uint32_t key);
+  void Retransmit(uint32_t findex);
+  double m_nack_interval;
+  double m_waitAckTimer;
+  Ptr<DropTailQueue> m_sendingBuffer[fCnt];
+  uint32_t m_chunk;
+  uint32_t m_ack_interval;
+  uint32_t ReceiverNextExpectedSeq[fCnt];
+  Time m_nackTimer[fCnt];
+  uint32_t m_lastNACK[fCnt];
+  int32_t m_milestone_rx[fCnt];
+  bool m_waitAck;
+  bool m_backto0;
+  bool m_testRead;
+  int32_t m_milestone_tx[fCnt];
+  EventId m_retransmit[fCnt];
+  bool m_waitingAck[fCnt];
 
 };
 

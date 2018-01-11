@@ -24,12 +24,13 @@ public:
   bool Enqueue (Ptr<Packet> p, uint32_t qIndex);
   Ptr<Packet> Dequeue (bool paused[]);
   Ptr<Packet> DequeueRR (bool paused[]);
-  Ptr<Packet> DequeueNIC (bool paused[]);
-  Ptr<Packet> DequeueQCN (bool paused[], Time avail[], uint32_t m_findex_qindex_map[]);
+  Ptr<Packet> DequeueNIC (bool paused[]);//QCN disable NIC
+  Ptr<Packet> DequeueQCN (bool paused[], Time avail[], uint32_t m_findex_qindex_map[]);//QCN enable NIC
   uint32_t GetNBytes (uint32_t qIndex) const;
   uint32_t GetNBytesTotal () const;
   uint32_t GetLastQueue ();
   uint32_t m_fcount;
+  void RecoverQueue(Ptr<DropTailQueue> buffer, uint32_t i);
 
 private:
   bool DoEnqueue (Ptr<Packet> p, uint32_t qIndex);

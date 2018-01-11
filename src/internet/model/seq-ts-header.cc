@@ -89,8 +89,9 @@ SeqTsHeader::Print (std::ostream &os) const
 uint32_t
 SeqTsHeader::GetSerializedSize (void) const
 {
-  return 14;
+  return 15;
 }
+
 
 void
 SeqTsHeader::Serialize (Buffer::Iterator start) const
@@ -99,6 +100,7 @@ SeqTsHeader::Serialize (Buffer::Iterator start) const
   i.WriteHtonU32 (m_seq);
   i.WriteHtonU64 (m_ts);
   i.WriteHtonU16 (m_pg);
+  i.WriteU8(m_ackNeeded);
 }
 uint32_t
 SeqTsHeader::Deserialize (Buffer::Iterator start)
@@ -107,6 +109,7 @@ SeqTsHeader::Deserialize (Buffer::Iterator start)
   m_seq = i.ReadNtohU32 ();
   m_ts =  i.ReadNtohU64 ();
   m_pg =  i.ReadNtohU16 ();
+  m_ackNeeded = i.ReadU8();
   return GetSerializedSize ();
 }
 

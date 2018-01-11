@@ -80,7 +80,7 @@ BroadcomNode::BroadcomNode()
 	//m_buffer_cell_limit_sp_shared=4000*1030; //ingress sp buffer shared threshold p.120, nonshare -> share
 	m_pg_min_cell=1030; //ingress pg guarantee p.121					---1
 	m_port_min_cell=1030; //ingress port guarantee						---2
-	m_pg_shared_limit_cell=20*1030; //max buffer for an ingress pg			---3	PAUSE
+	m_pg_shared_limit_cell=40*1030; //max buffer for an ingress pg			---3	PAUSE
 	m_port_max_shared_cell=4800*1030; //max buffer for an ingress port		---4	PAUSE
 	m_pg_hdrm_limit=100*1030; //ingress pg headroom
 	m_port_max_pkt_size=100*1030; //ingress global headroom
@@ -115,13 +115,14 @@ BroadcomNode::BroadcomNode()
 BroadcomNode::~BroadcomNode ()
 {}
 
+
 bool 
 BroadcomNode::CheckIngressAdmission(uint32_t port,uint32_t qIndex,uint32_t psize)
 {
 	if (m_usedTotalBytes+psize>m_maxBufferBytes)  //buffer full, usually should not reach here.
 	{
 		std::cout<<"WARNING: Drop because ingress buffer full\n";
-		exit(1);
+		//exit(1);
 		return false;
 	}
 	if (m_usedIngressPGBytes[port][qIndex]+psize>m_pg_min_cell && m_usedIngressPortBytes[port]+psize>m_port_min_cell) // exceed guaranteed, use share buffer
@@ -131,18 +132,24 @@ BroadcomNode::CheckIngressAdmission(uint32_t port,uint32_t qIndex,uint32_t psize
 			if (m_usedIngressPGHeadroomBytes[port][qIndex] + psize > m_pg_hdrm_limit) // exceed headroom space
 			{
 				std::cout << "WARNING: Drop because ingress headroom full:" << m_usedIngressPGHeadroomBytes[port][qIndex] << "\t" << m_pg_hdrm_limit << "\n";
+				return false;
+				/*
 				if (qIndex != 1)	//rdma loss
 					exit(1);
 				else
 					return false;
+				*/
 			}
 		}
 	}
 	return true;
 }
 
-
-
+void
+BroadcomNode::SetId(int id)
+{
+	m_id = id;
+}
 
 bool 
 BroadcomNode::CheckEgressAdmission(uint32_t port,uint32_t qIndex,uint32_t psize)
@@ -150,7 +157,7 @@ BroadcomNode::CheckEgressAdmission(uint32_t port,uint32_t qIndex,uint32_t psize)
 	if (m_usedEgressSPBytes[GetEgressSP(port,qIndex)]+psize>m_op_buffer_shared_limit_cell)  //exceed the sp limit
 	{
 		std::cout<<"WARNING: Drop because egress SP buffer full\n";
-		exit(1);
+		//exit(1);
 		return false;
 	}
 	if (m_usedEgressPortBytes[port]+psize>m_op_uc_port_config_cell)	//exceed the port limit
@@ -178,7 +185,13 @@ BroadcomNode::UpdateIngressAdmission(uint32_t port,uint32_t qIndex,uint32_t psiz
 	{
 		m_usedIngressPGHeadroomBytes[port][qIndex] += psize;
 	}
-	return;
+	
+	if (m_id == 2)
+	{
+		printf("%f IB %d:%d %d\n", Simulator::Now().GetSeconds(), m_id, port, m_usedIngressPortBytes[port]);
+	}
+	
+	
 }
 
 void 
@@ -263,7 +276,7 @@ BroadcomNode::GetPauseClasses(uint32_t port, uint32_t qIndex, bool pClasses[])
 
 			if ((double)m_usedIngressPGBytes[port][i] - m_pg_min_cell - m_port_min_cell>m_pg_shared_alpha_cell*((double)m_buffer_cell_limit_sp - m_usedIngressSPBytes[GetIngressSP(port, qIndex)]))
 			{
-				std::cout << Simulator::Now().GetSeconds() << "\tPAUSE Port:" << port << "\tPG:" << i << "\tIngress PG buffer:" << int(m_usedIngressPGBytes[port][i] / 1030.0) << "\tShared buffer left:" << int(((double)m_buffer_cell_limit_sp - m_usedIngressSPBytes[GetIngressSP(port, qIndex)]) / 1030.0) << "\tTotal used:" << int(m_usedTotalBytes / 1030.0) << "\n";
+				//std::cout << Simulator::Now().GetSeconds() << "\tPAUSE Port:" << port << "\tPG:" << i << "\tIngress PG buffer:" << int(m_usedIngressPGBytes[port][i] / 1030.0) << "\tShared buffer left:" << int(((double)m_buffer_cell_limit_sp - m_usedIngressSPBytes[GetIngressSP(port, qIndex)]) / 1030.0) << "\tTotal used:" << int(m_usedTotalBytes / 1030.0) << "\n";
 				pClasses[i]=true;
 			}
 		}
@@ -427,6 +440,12 @@ uint32_t
 BroadcomNode::GetUsedBufferTotal()
 {
 	return m_usedTotalBytes;
+}
+
+uint32_t
+BroadcomNode::GetUsedIngressBuffer(uint32_t port)
+{
+	return m_usedIngressPortBytes[port];
 }
 
 void 

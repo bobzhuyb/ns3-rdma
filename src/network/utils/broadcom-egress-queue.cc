@@ -32,7 +32,7 @@ TypeId BEgressQueue::GetTypeId (void)
                                     QUEUE_MODE_PACKETS, "QUEUE_MODE_PACKETS")) */
     .AddAttribute ("MaxBytes", 
                    "The maximum number of bytes accepted by this BEgressQueue.",
-                   DoubleValue (10.0 * 1024 * 1024),
+                   DoubleValue (1000.0 * 1024 * 1024),
                    MakeDoubleAccessor (&BEgressQueue::m_maxBytes),
                    MakeDoubleChecker<double> ())
   ;
@@ -150,6 +150,7 @@ BEgressQueue::DoDequeueNIC (bool paused[])
 		m_rrlast = qIndex;
 		NS_LOG_LOGIC ("Popped " << p);
 		NS_LOG_LOGIC ("Number bytes " << m_bytesInQueueTotal);
+		m_qlast = qIndex;
 		return p;
 	}
   NS_LOG_LOGIC ("Nothing can be sent");
@@ -179,7 +180,7 @@ BEgressQueue::DoDequeueRR (bool paused[]) //this is for switch only
   {
 	  for (qIndex = qCnt - 2; qIndex < qCnt; qIndex--) //strict policy
 	  {
-		  if (m_bwsatisfied[qIndex].GetTimeStep()<Simulator::Now().GetTimeStep() && m_queues[qIndex]->GetNPackets()>0)
+		  if (m_bwsatisfied[qIndex].GetTimeStep()<Simulator::Now().GetTimeStep() && m_queues[qIndex]->GetNPackets()>0 && !paused[qIndex])
 		  {
 			  found = true;
 			  break;
@@ -376,8 +377,8 @@ BEgressQueue::DoEnqueue (Ptr<Packet> p)	//for compatiability
   }
   else
   {
-	  std::cout<<"Dropped in compatiable egress queue!!!\n";
-	  exit(0);
+	  //std::cout<<"Dropped in compatiable egress queue!!!\n";
+	  //exit(0);
 	  return false;
 
   }
@@ -456,5 +457,54 @@ BEgressQueue::GetLastQueue ()
 {
 	return m_qlast;
 }
+
+void
+BEgressQueue::RecoverQueue(Ptr<DropTailQueue> buffer, uint32_t i)
+{
+	Ptr<Packet> packet;
+	Ptr<DropTailQueue> tmp = CreateObject<DropTailQueue>();
+	//clear orignial queue
+	while (!m_queues[i]->IsEmpty())
+	{
+		packet = m_queues[i]->Dequeue();
+		m_bytesInQueue[i] -= packet->GetSize();
+		m_bytesInQueueTotal -= packet->GetSize();
+	}
+	//recover queue and preserve buffer
+	while (!buffer->IsEmpty())
+	{
+		packet = buffer->Dequeue();
+		tmp->Enqueue(packet->Copy());
+		m_queues[i]->Enqueue(packet->Copy());
+		m_bytesInQueue[i] += packet->GetSize();
+		m_bytesInQueueTotal += packet->GetSize();
+	}
+	//restore buffer
+	while (!tmp->IsEmpty())
+	{
+		buffer->Enqueue(tmp->Dequeue()->Copy());
+	}
+
+	/*
+	Ptr<DropTailQueue> tmp = CreateObject<DropTailQueue>();
+	Ptr<Packet> packet;
+	while (!m_queues[i]->IsEmpty())
+	{
+		packet = m_queues[i]->Dequeue();
+		tmp->Enqueue(packet);
+	}
+	while (!buffer->IsEmpty())
+	{
+		packet = buffer->Dequeue();
+		m_queues[i]->Enqueue(packet);
+	}
+	while (!tmp->IsEmpty())
+	{
+		packet = tmp->Dequeue();
+		m_queues[i]->Enqueue(packet);
+	}
+	*/
+}
+
 
 }

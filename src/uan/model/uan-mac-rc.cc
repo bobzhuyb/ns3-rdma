@@ -570,7 +570,7 @@ UanMacRc::ProcessAck (Ptr<Packet> ack)
     }
   if (it == m_resList.end ())
     {
-     // NS_LOG_DEBUG ("In " << __func__ << " could not find reservation corresponding to received ACK");
+      NS_LOG_DEBUG ("In ProcessAck" << " could not find reservation corresponding to received ACK");
       return;
     }
   if (!it->IsTransmitted ())

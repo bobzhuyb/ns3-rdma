@@ -13,7 +13,7 @@ namespace ns3 {
 
 NS_OBJECT_ENSURE_REGISTERED (qbbHeader);
 
-qbbHeader::qbbHeader (uint32_t pg)
+qbbHeader::qbbHeader (uint16_t pg)
   : m_pg(pg)
 {
 }
@@ -25,16 +25,35 @@ qbbHeader::qbbHeader ()
 qbbHeader::~qbbHeader ()
 {}
 
-void qbbHeader::SetPG (uint32_t pg)
+void qbbHeader::SetPG (uint16_t pg)
 {
   m_pg = pg;
 }
 
-uint32_t qbbHeader::GetPG () const
+void qbbHeader::SetSeq(uint32_t seq)
+{
+	m_seq = seq;
+}
+
+void qbbHeader::SetPort(uint16_t port)
+{
+	m_port = port;
+}
+
+uint16_t qbbHeader::GetPG () const
 {
   return m_pg;
 }
 
+uint32_t qbbHeader::GetSeq() const
+{
+	return m_seq;
+}
+
+uint16_t qbbHeader::GetPort() const
+{
+	return m_port;
+}
 
 TypeId
 qbbHeader::GetTypeId (void)
@@ -52,20 +71,26 @@ qbbHeader::GetInstanceTypeId (void) const
 }
 void qbbHeader::Print (std::ostream &os) const
 {
-  os << "qbb=" << m_pg ;
+  os << "qbb:" << "pg=" << m_pg << ",seq=" << m_seq;
 }
 uint32_t qbbHeader::GetSerializedSize (void)  const
 {
-  return 4;
+	return sizeof(m_pg) + sizeof(m_seq) + sizeof(m_port);
 }
 void qbbHeader::Serialize (Buffer::Iterator start)  const
 {
-  start.WriteU32 (m_pg);
+  Buffer::Iterator i = start;
+  i.WriteU16 (m_pg);
+  i.WriteU32(m_seq);
+  i.WriteU16(m_port);
 }
 
 uint32_t qbbHeader::Deserialize (Buffer::Iterator start)
 {
-  m_pg = start.ReadU32 ();
+  Buffer::Iterator i = start;
+  m_pg = i.ReadU16 ();
+  m_seq = i.ReadU32();
+  m_port = i.ReadU16();
   return GetSerializedSize ();
 }
 
