@@ -156,6 +156,9 @@ UdpServer::HandleRead (Ptr<Socket> socket)
     {
       if (packet->GetSize () > 0)
         {
+			if (m_node->GetId() == 6 && m_received % 10 == 0) {
+				printf("%f Z%d %d\n", Simulator::Now().GetSeconds(), m_node->GetId(), m_received);
+			}
           SeqTsHeader seqTs;
           packet->RemoveHeader (seqTs);
           uint32_t currentSequenceNumber = seqTs.GetSeq ();

@@ -54,7 +54,7 @@ TimelyReceiver::GetTypeId (void)
 				   MakeUintegerChecker<uint16_t> ())
 	.AddAttribute ("ChunkSize", 
 				   "The chunk size can be sent before getting an ack",
-				   UintegerValue (16000000),
+				   UintegerValue (1000),
 				   MakeUintegerAccessor (&TimelyReceiver::m_chunk),
 				   MakeUintegerChecker<uint32_t> ())
   ;
@@ -64,7 +64,9 @@ TimelyReceiver::GetTypeId (void)
 TimelyReceiver::TimelyReceiver ()
 {
 	m_received = 0;
-  NS_LOG_FUNCTION_NOARGS ();
+	m_sent = 0;
+	count = 0;
+	NS_LOG_FUNCTION_NOARGS ();
 }
 
 TimelyReceiver::~TimelyReceiver()
@@ -150,41 +152,35 @@ TimelyReceiver::StopApplication ()
 }
 
 void 
-TimelyReceiver::HandleRead (Ptr<Socket> socket)
+TimelyReceiver::HandleRead(Ptr<Socket> socket)
 {
-  Ptr<Packet> packet;
-  Address from;
-  while ((packet = socket->RecvFrom (from)))
-    {
-      if (InetSocketAddress::IsMatchingType (from))
-        {
-          NS_LOG_INFO ("At time " << Simulator::Now ().GetSeconds () << "s server received " << packet->GetSize () << " bytes from " <<
-                       InetSocketAddress::ConvertFrom (from).GetIpv4 () << " port " <<
-                       InetSocketAddress::ConvertFrom (from).GetPort ());
+	Ptr<Packet> packet;
+	Address from;
+	while ((packet = socket->RecvFrom(from)))
+	{
+		m_received++;
+		SeqTsHeader receivedSeqTs;
+		packet->RemoveHeader(receivedSeqTs);
+		if (receivedSeqTs.GetAckNeeded() == 1)
+		{
+			double timeNow = Simulator::Now().GetSeconds();
+			double rcvdTs = receivedSeqTs.GetTs().GetSeconds();
+			double oneWayDelay = timeNow - rcvdTs;
+			int sz = packet->GetSize();
 
-		  packet->RemoveAllPacketTags ();
-		  packet->RemoveAllByteTags ();
+			count++;
+			SeqTsHeader seqTs;
+			seqTs.SetSeq(m_sent);
+			seqTs.SetPG(m_pg);
+			seqTs.SetTsAsUint64(receivedSeqTs.GetTsAsUint64());
+			Ptr<Packet> p = Create<Packet>(0);
+			p->AddHeader(seqTs);
+			NS_LOG_LOGIC("Echoing packet");
+			socket->SendTo(p, 0, from);
+			m_sent++;
 
-		  m_received += packet->GetSize();
-		  if (m_received>=m_chunk)
-		  {
-			  m_received = 0;
-			  SeqTsHeader seqTs;
-			  seqTs.SetSeq (1);
-			  seqTs.SetPG (m_pg);
-			  Ptr<Packet> p = Create<Packet> (0);
-			  p->AddHeader (seqTs);
-			  NS_LOG_LOGIC ("Echoing packet");
-			  socket->SendTo (p, 0, from);	  //ack
-		  } 
-	  }
-      else if (Inet6SocketAddress::IsMatchingType (from))
-        {
-          NS_LOG_INFO ("At time " << Simulator::Now ().GetSeconds () << "s server received " << packet->GetSize () << " bytes from " <<
-                       Inet6SocketAddress::ConvertFrom (from).GetIpv6 () << " port " <<
-                       InetSocketAddress::ConvertFrom (from).GetPort ());
-        }
-    }
+		}
+	}
 }
 
 } // Namespace ns3

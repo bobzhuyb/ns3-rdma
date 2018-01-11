@@ -65,6 +65,8 @@ private:
   uint16_t m_pg;
   uint32_t m_received;
   uint32_t m_chunk;
+  uint32_t m_sent;
+  int count;
 
 };
 

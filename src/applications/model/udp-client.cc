@@ -73,7 +73,7 @@ UdpClient::GetTypeId (void)
                    "Size of packets generated. The minimum packet size is 14 bytes which is the size of the header carrying the sequence number and the time stamp.",
                    UintegerValue (1024),
                    MakeUintegerAccessor (&UdpClient::m_size),
-                   MakeUintegerChecker<uint32_t> (14,1500))
+                   MakeUintegerChecker<uint32_t> (14,1000000))
   ;
   return tid;
 }
@@ -143,6 +143,7 @@ UdpClient::StartApplication (void)
   m_socket->SetRecvCallback (MakeCallback (&UdpClient::Reset, this));
   m_sendEvent = Simulator::Schedule (Seconds (0.0), &UdpClient::Send, this);
   m_allowed = m_count;
+  Time x = Simulator::Now();
 }
 
 void
@@ -192,7 +193,8 @@ UdpClient::Send (void)
 	  SeqTsHeader seqTs;
 	  seqTs.SetSeq (m_sent);
 	  seqTs.SetPG (m_pg);
-	  Ptr<Packet> p = Create<Packet> (m_size-14); // 14 : the size of the seqTs header
+	  Ptr<Packet> p = Create<Packet> (m_size-14-10); // 14 : the size of the seqTs header, 10: the size of qbb header
+	  int x = p->GetSize();
 	  p->AddHeader (seqTs);
 
 	  std::stringstream peerAddressStringStream;
@@ -224,6 +226,7 @@ UdpClient::Send (void)
   //Yibo: add jitter here to avoid unfairness!!!!!
   if (m_sent < m_allowed)
     {
+	  double now = Simulator::Now().GetSeconds();
       m_sendEvent = Simulator::Schedule (Seconds(next_avail * UniformVariable(0.45,0.55).GetValue()), &UdpClient::Send, this);
     }
 

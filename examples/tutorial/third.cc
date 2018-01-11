@@ -14,6 +14,7 @@
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
+/* xxx*/
 #undef PGO_TRAINING
 
 #include <iostream>
@@ -28,13 +29,15 @@
 #include "ns3/ipv4-static-routing-helper.h"
 #include "ns3/broadcom-node.h"
 #include "ns3/packet.h"
+#include "ns3/error-model.h"
+#include "ns3/qbb-net-device.h";
 
 using namespace ns3;
 
 NS_LOG_COMPONENT_DEFINE("GENERIC_SIMULATION");
 
 bool enable_qcn = true, use_dynamic_pfc_threshold = true, packet_level_ecmp = false, flow_level_ecmp = false;
-uint32_t packet_payload_size = 1000;
+uint32_t packet_payload_size = 1000, l2_chunk_size=0, l2_ack_interval=0;
 double pause_time = 5, simulator_stop_time = 3.01, app_start_time = 1.0, app_stop_time = 9.0;
 std::string data_rate, link_delay, topology_file, flow_file, tcp_flow_file, trace_file, trace_output_file;
 bool used_port[65536] = { 0 };
@@ -43,38 +46,42 @@ double cnp_interval = 50, alpha_resume_interval = 55, rp_timer, dctcp_gain = 1 /
 uint32_t byte_counter, fast_recovery_times = 5, kmax = 60, kmin = 60;
 std::string rate_ai, rate_hai;
 
-bool clamp_target_rate = false, clamp_target_rate_after_timer = false, send_in_chunks = true;
+bool clamp_target_rate = false, clamp_target_rate_after_timer = false, send_in_chunks = true, l2_wait_for_ack=false, l2_back_to_zero=false, l2_test_read=false;
+double error_rate_per_link=0.0;
 
+NodeContainer n;
 
+void
+PrintQueue()
+{
+	double timeNow = Simulator::Now().GetSeconds();
+	printf("%f Q %d\n", timeNow, n.Get(0)->GetDevice(1)->GetUsedBuffer(0, 3));
+	Simulator::Schedule(MicroSeconds(100), &PrintQueue);
+}
 
 int main(int argc, char *argv[])
 {
 	clock_t begint, endt;
-	char *x;
-	x = argv[1];
-	std::cout << x;
 	begint = clock();
 #ifndef PGO_TRAINING
 	if (argc>1)
 #else
-	if (argc == 1)
+	if (true)
 #endif
 	{
 		//Read the configuration file
 		std::ifstream conf;
 #ifndef PGO_TRAINING
 		conf.open(argv[1]);
-		if (conf.good())
-		{
-			std::cout << "okay";
-		}
 #else
-		conf.open("D:\\ns-3-win2\\windows\\ns-3-dev\\mix\\config.txt");
+		conf.open("C:\\Users\\t-yibzhu\\Documents\\ns-3-win2\\ns-3-win2\\windows\\ns-3-dev\\x64\\Release\\mix\\config.txt");
 #endif
 		while (!conf.eof())
 		{
 			std::string key;
 			conf >> key;
+
+			//std::cout << conf.cur << "\n";
 
 			if (key.compare("ENABLE_QCN") == 0)
 			{
@@ -163,6 +170,50 @@ int main(int argc, char *argv[])
 				conf >> v;
 				packet_payload_size = v;
 				std::cout << "PACKET_PAYLOAD_SIZE\t\t" << packet_payload_size << "\n";
+			}
+			else if (key.compare("L2_CHUNK_SIZE") == 0)
+			{
+				uint32_t v;
+				conf >> v;
+				l2_chunk_size = v;
+				std::cout << "L2_CHUNK_SIZE\t\t\t" << l2_chunk_size << "\n";
+			}
+			else if (key.compare("L2_ACK_INTERVAL") == 0)
+			{
+				uint32_t v;
+				conf >> v;
+				l2_ack_interval = v;
+				std::cout << "L2_ACK_INTERVAL\t\t\t" << l2_ack_interval << "\n";
+			}
+			else if (key.compare("L2_WAIT_FOR_ACK") == 0)
+			{
+				uint32_t v;
+				conf >> v;
+				l2_wait_for_ack = v;
+				if (l2_wait_for_ack)
+					std::cout << "L2_WAIT_FOR_ACK\t\t\t" << "Yes" << "\n";
+				else
+					std::cout << "L2_WAIT_FOR_ACK\t\t\t" << "No" << "\n";
+			}
+			else if (key.compare("L2_BACK_TO_ZERO") == 0)
+			{
+				uint32_t v;
+				conf >> v;
+				l2_back_to_zero = v;
+				if (l2_back_to_zero)
+					std::cout << "L2_BACK_TO_ZERO\t\t\t" << "Yes" << "\n";
+				else
+					std::cout << "L2_BACK_TO_ZERO\t\t\t" << "No" << "\n";
+			}
+			else if (key.compare("L2_TEST_READ") == 0)
+			{
+				uint32_t v;
+				conf >> v;
+				l2_test_read = v;
+				if (l2_test_read)
+					std::cout << "L2_TEST_READ\t\t\t" << "Yes" << "\n";
+				else
+					std::cout << "L2_TEST_READ\t\t\t" << "No" << "\n";
 			}
 			else if (key.compare("TOPOLOGY_FILE") == 0)
 			{
@@ -314,9 +365,19 @@ int main(int argc, char *argv[])
 				conf >> v;
 				send_in_chunks = v;
 				if (send_in_chunks)
+				{
 					std::cout << "SEND_IN_CHUNKS\t\t\t" << "Yes" << "\n";
+					std::cout << "WARNING: deprecated and not tested. Please consider using L2_WAIT_FOR_ACK";
+				}
 				else
 					std::cout << "SEND_IN_CHUNKS\t\t\t" << "No" << "\n";
+			}
+			else if (key.compare("ERROR_RATE_PER_LINK") == 0)
+			{
+				double v;
+				conf >> v;
+				error_rate_per_link = v;
+				std::cout << "ERROR_RATE_PER_LINK\t\t" << error_rate_per_link << "\n";
 			}
 			fflush(stdout);
 		}
@@ -349,31 +410,19 @@ int main(int argc, char *argv[])
 	Config::SetDefault("ns3::QbbNetDevice::DCTCPGain", DoubleValue(dctcp_gain));
 	Config::SetDefault("ns3::QbbNetDevice::RateAI", DataRateValue(DataRate(rate_ai)));
 	Config::SetDefault("ns3::QbbNetDevice::RateHAI", DataRateValue(DataRate(rate_hai)));
+	Config::SetDefault("ns3::QbbNetDevice::L2BackToZero", BooleanValue(l2_back_to_zero));
+	Config::SetDefault("ns3::QbbNetDevice::L2TestRead", BooleanValue(l2_test_read));
+	Config::SetDefault("ns3::QbbNetDevice::L2ChunkSize", UintegerValue(l2_chunk_size));
+	Config::SetDefault("ns3::QbbNetDevice::L2AckInterval", UintegerValue(l2_ack_interval));
+	Config::SetDefault("ns3::QbbNetDevice::L2WaitForAck", BooleanValue(l2_wait_for_ack));
 
 	SeedManager::SetSeed(time(NULL));
 
 	std::ifstream topof, flowf, tracef, tcpflowf;
 	topof.open(topology_file.c_str());
-	if (!topof.good())
-	{
-		exit(-1);
-	}
 	flowf.open(flow_file.c_str());
-	if (!flowf.good())
-	{
-		exit(-1);
-	}
 	tracef.open(trace_file.c_str());
-	if (!tracef.good())
-	{
-		exit(-1);
-	}
 	tcpflowf.open(tcp_flow_file.c_str());
-	if (!tcpflowf.good())
-	{
-		exit(-1);
-	}
-
 	uint32_t node_num, switch_num, link_num, flow_num, trace_num, tcp_flow_num;
 	topof >> node_num >> switch_num >> link_num;
 	flowf >> flow_num;
@@ -381,7 +430,7 @@ int main(int argc, char *argv[])
 	tcpflowf >> tcp_flow_num;
 
 
-	NodeContainer n;
+	
 	n.Create(node_num);
 	for (uint32_t i = 0; i<switch_num; i++)
 	{
@@ -403,25 +452,51 @@ int main(int argc, char *argv[])
 	// Explicitly create the channels required by the topology.
 	//
 
+	Ptr<RateErrorModel> rem = CreateObject<RateErrorModel>();
+	Ptr<UniformRandomVariable> uv = CreateObject<UniformRandomVariable>();
+	rem->SetRandomVariable(uv);
+	uv->SetStream(50);
+	rem->SetAttribute("ErrorRate", DoubleValue(error_rate_per_link));
+	rem->SetAttribute("ErrorUnit", StringValue("ERROR_UNIT_PACKET"));
+
 	QbbHelper qbb;
+	//PointToPointHelper qbb;
+
 	Ipv4AddressHelper ipv4;
 	for (uint32_t i = 0; i<link_num; i++)
 	{
 		uint32_t src, dst;
 		std::string data_rate, link_delay;
-		topof >> src >> dst >> data_rate >> link_delay;
+		double error_rate;
+		topof >> src >> dst >> data_rate >> link_delay >> error_rate;
 
 		qbb.SetDeviceAttribute("DataRate", StringValue(data_rate));
 		qbb.SetChannelAttribute("Delay", StringValue(link_delay));
-		//std::cout << src << "\t" << dst << "\t" << data_rate << "\t" << link_delay << "\n";
+		
+		if (error_rate > 0)
+		{
+			Ptr<RateErrorModel> rem = CreateObject<RateErrorModel>();
+			Ptr<UniformRandomVariable> uv = CreateObject<UniformRandomVariable>();
+			rem->SetRandomVariable(uv);
+			uv->SetStream(50);
+			rem->SetAttribute("ErrorRate", DoubleValue(error_rate));
+			rem->SetAttribute("ErrorUnit", StringValue("ERROR_UNIT_PACKET"));
+			qbb.SetDeviceAttribute("ReceiveErrorModel", PointerValue(rem));
+		}
+		else
+		{
+			qbb.SetDeviceAttribute("ReceiveErrorModel", PointerValue(rem));
+		}
+		
+		//std::cout << src << "\t" << dst << "\t" << data_rate << "\t" << link_delay << "\t" << error_rate << "\n";
 		fflush(stdout);
 		NetDeviceContainer d = qbb.Install(n.Get(src), n.Get(dst));
+		
 		char ipstring[16];
 		sprintf(ipstring, "10.%d.%d.0", i / 254 + 1, i % 254 + 1);
 		ipv4.SetBase(ipstring, "255.255.255.0");
 		ipv4.Assign(d);
 	}
-
 
 	NodeContainer trace_nodes;
 	for (uint32_t i = 0; i<trace_num; i++)
@@ -430,8 +505,14 @@ int main(int argc, char *argv[])
 		tracef >> nid;
 		trace_nodes = NodeContainer(trace_nodes, n.Get(nid));
 	}
-	AsciiTraceHelper ascii;
-	qbb.EnableAscii(ascii.CreateFileStream(trace_output_file), trace_nodes);
+
+	//AsciiTraceHelper ascii; 
+	//qbb.EnableAsciiAll(ascii.CreateFileStream(trace_output_file));
+	//qbb.EnableAscii(ascii.CreateFileStream(trace_output_file), z);
+
+	/*NodeContainer z;
+	z.Add(n.Get(0));
+	qbb.EnablePcap("zz", z, true);*/
 
 	Ipv4GlobalRoutingHelper::PopulateRoutingTables();
 
@@ -440,33 +521,62 @@ int main(int argc, char *argv[])
 	uint32_t packetSize = packet_payload_size;
 	Time interPacketInterval = Seconds(0.0000005 / 2);
 
-	for (uint32_t i = 0; i < flow_num; i++)
+	for (uint32_t i = 0; i<flow_num; i++)
 	{
 		uint32_t src, dst, pg, maxPacketCount, port;
-		double start_time, stop_time;
+		double start_time, stop_time, initial_rate_gbps;
 		while (used_port[port = int(UniformVariable(0, 1).GetValue() * 40000)])
 			continue;
 		used_port[port] = true;
-		flowf >> src >> dst >> pg >> maxPacketCount >> start_time >> stop_time;
+		flowf >> src >> dst >> pg >> maxPacketCount >> start_time >> stop_time >> initial_rate_gbps;
 		NS_ASSERT(n.Get(src)->GetNodeType() == 0 && n.Get(dst)->GetNodeType() == 0);
 		Ptr<Ipv4> ipv4 = n.Get(dst)->GetObject<Ipv4>();
 		Ipv4Address serverAddress = ipv4->GetAddress(1, 0).GetLocal(); //GetAddress(0,0) is the loopback 127.0.0.1
 
-		TimelyReceiverHelper server0((uint16_t)port, (uint16_t)pg); //Add Priority
+		TimelyReceiverHelper server0(port, pg);
 		ApplicationContainer apps0s = server0.Install(n.Get(dst));
 		apps0s.Start(Seconds(app_start_time));
 		apps0s.Stop(Seconds(app_stop_time));
 
-		TimelySenderHelper client0(serverAddress, port, pg); //Add Priority
+		TimelySenderHelper client0(serverAddress, port, pg);
 		client0.SetAttribute("MaxPackets", UintegerValue(maxPacketCount));
-		client0.SetAttribute("Interval", TimeValue(interPacketInterval));
 		client0.SetAttribute("PacketSize", UintegerValue(packetSize));
+		client0.SetAttribute("InitialRate", DoubleValue(initial_rate_gbps * 1000 * 1000 * 1000));
 		ApplicationContainer apps0c = client0.Install(n.Get(src));
 		apps0c.Start(Seconds(start_time));
 		apps0c.Stop(Seconds(stop_time));
 
-	}
 
+		//if (send_in_chunks)
+		//{
+		//	UdpEchoServerHelper server0(port, pg); //Add Priority
+		//	ApplicationContainer apps0s = server0.Install(n.Get(dst));
+		//	apps0s.Start(Seconds(app_start_time));
+		//	apps0s.Stop(Seconds(app_stop_time));
+		//	UdpEchoClientHelper client0(serverAddress, port, pg); //Add Priority
+		//	client0.SetAttribute("MaxPackets", UintegerValue(maxPacketCount));
+		//	client0.SetAttribute("Interval", TimeValue(interPacketInterval));
+		//	client0.SetAttribute("PacketSize", UintegerValue(packetSize));
+		//	ApplicationContainer apps0c = client0.Install(n.Get(src));
+		//	apps0c.Start(Seconds(start_time));
+		//	apps0c.Stop(Seconds(stop_time));
+		//}
+		//else
+		//{
+		//	UdpServerHelper server0(port);
+		//	ApplicationContainer apps0s = server0.Install(n.Get(dst));
+		//	apps0s.Start(Seconds(app_start_time));
+		//	apps0s.Stop(Seconds(app_stop_time));
+		//	UdpClientHelper client0(serverAddress, port, pg); //Add Priority
+		//	client0.SetAttribute("MaxPackets", UintegerValue(maxPacketCount));
+		//	client0.SetAttribute("Interval", TimeValue(interPacketInterval));
+		//	client0.SetAttribute("PacketSize", UintegerValue(packetSize));
+		//	ApplicationContainer apps0c = client0.Install(n.Get(src));
+		//	apps0c.Start(Seconds(start_time));
+		//	apps0c.Stop(Seconds(stop_time));
+		//}
+
+	}
 
 	for (uint32_t i = 0; i < tcp_flow_num; i++)
 	{
@@ -501,6 +611,8 @@ int main(int argc, char *argv[])
 	tracef.close();
 	tcpflowf.close();
 
+	Simulator::Schedule(Seconds(1), &PrintQueue);
+
 	//
 	// Now, do the actual simulation.
 	//
@@ -514,5 +626,5 @@ int main(int argc, char *argv[])
 
 	endt = clock();
 	std::cout << (double)(endt - begint) / CLOCKS_PER_SEC << "\n";
-
 }
+
