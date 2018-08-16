@@ -141,7 +141,8 @@ Packet::Packet ()
     m_CE(0),
     m_LBTag(0),
     m_FBPath(0),
-    m_FBMetric(0) //对加入的变量进行初始化
+    m_FBMetric(0),//¶Ô¼ÓÈëµÄ±äÁ¿½øÐÐ³õÊ¼»¯
+    m_nodeid(0)
 {
   m_globalUid++;
 }
@@ -187,7 +188,8 @@ Packet::Packet (uint32_t size)
     m_CE(0),
     m_LBTag(0),
     m_FBPath(0),
-    m_FBMetric(0) //对加入的变量进行初始化
+    m_FBMetric(0), //¶Ô¼ÓÈëµÄ±äÁ¿½øÐÐ³õÊ¼»¯
+    m_nodeid(0)
 {
   m_globalUid++;
 }
@@ -200,7 +202,8 @@ Packet::Packet (uint8_t const *buffer, uint32_t size, bool magic)
     m_CE(0),
     m_LBTag(0),
     m_FBPath(0),
-    m_FBMetric(0) //对加入的变量进行初始化
+    m_FBMetric(0) ,//¶Ô¼ÓÈëµÄ±äÁ¿½øÐÐ³õÊ¼»¯
+    m_nodeid(0)
 {
   NS_ASSERT (magic);
   Deserialize (buffer, size);
@@ -221,7 +224,8 @@ Packet::Packet (uint8_t const*buffer, uint32_t size)
     m_CE(0),
     m_LBTag(0),
     m_FBPath(0),
-    m_FBMetric(0) //对加入的变量进行初始化
+    m_FBMetric(0), //¶Ô¼ÓÈëµÄ±äÁ¿½øÐÐ³õÊ¼»¯
+    m_nodeid(0)
 {
   m_globalUid++;
   m_buffer.AddAtStart (size);
@@ -239,7 +243,8 @@ Packet::Packet (const Buffer &buffer,  const ByteTagList &byteTagList,
     m_CE(0),
     m_LBTag(0),
     m_FBPath(0),
-    m_FBMetric(0) //对加入的变量进行初始化
+    m_FBMetric(0), //¶Ô¼ÓÈëµÄ±äÁ¿½øÐÐ³õÊ¼»
+    m_nodeid(0)
 {
 }
 
@@ -938,12 +943,12 @@ std::ostream& operator<< (std::ostream& os, const Packet &packet)
   return os;
 }
 
-//设置路上的拥塞程度
+//ÉèÖÃÂ·ÉÏµÄÓµÈû³Ì¶È
 void Packet::SetCE(float cost)
 {
   m_CE=cost;
 }
-//获取拥塞程度
+//»ñÈ¡ÓµÈû³Ì¶È
 float Packet::GetCE()
 {
   return m_CE;
@@ -966,6 +971,13 @@ void Packet::SetLBTag(uint32_t LBTag){
 }
 uint32_t Packet::GetLBTag(){
   return m_LBTag;
+}
+//设置从哪个点来；
+void Packet::SetNodeId(uint32_t nodeid){
+  m_nodeid=nodeid;
+}
+uint32_t Packet::GetNodeId(){
+  return m_nodeid;
 }
 
 } // namespace ns3
